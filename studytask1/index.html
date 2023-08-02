@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studytask1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @font-face {
+            font-family: myfirstfont;
+            src: url(qr.otf)
+        }
+
+        @font-face {
+            font-family: myscndfont;
+            src: url(sblack.ttf);
+        }
+
+        .container .header {
+            background-image: url(pexels-photo-5211438\ \(1\).jpeg);
+
+            height: 700px;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+
+
+
+        }
+
+        .container .header .nav {
+            background-image: linear-gradient(1deg, #9460CF, #3B5CCF 99%);
+            opacity: 60%;
+            height: 650px;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            position: relative;
+
+
+
+
+
+
+        }
+
+        .container .header .gem {
+            position: absolute;
+            top: 6%;
+            left: 13%
+        }
+
+        .container .header .nav .study {
+            font-size: 180%;
+            font-family: myfirstfont;
+            position: absolute;
+            left: 16%;
+            top: 4%;
+            color: white;
+        }
+
+        .container .header .nav .journey {
+            font-size: small;
+            position: absolute;
+            color: white;
+            left: 16%;
+            top: 9%;
+        }
+
+        .container .header .nav .home {
+            position: absolute;
+            left: 40%;
+            top: 6%;
+            color: white;
+            text-decoration: none;
+
+
+        }
+
+        .container .header .nav .about {
+            position: absolute;
+            left: 45%;
+            top: 6%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container .header .nav .courses {
+            position: absolute;
+            left: 50%;
+            top: 6%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container .header .nav .pages {
+            position: absolute;
+            left: 56%;
+            top: 6%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container .header .nav .contact {
+            position: absolute;
+            left: 60%;
+            top: 6%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .glass {
+            position: absolute;
+            left: 75%;
+            top: 6%;
+        }
+
+        .user {
+            position: absolute;
+            left: 78%;
+            top: 6%;
+        }
+
+        .container .header .nav .login {
+            position: absolute;
+            left: 80%;
+            top: 6%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .moon {
+            position: absolute;
+            left: 84%;
+            top: 6%;
+        }
+
+        .container .discount {
+            position: absolute;
+            color: white;
+            text-align: center;
+
+        }
+
+        .nav .disc {
+            position: absolute;
+            font-size: 300%;
+            font-family: myfirstfont;
+            left: 33%;
+            top: 30%;
+            text-align: center;
+            color: white;
+
+
+        }
+
+        .nav .take {
+            position: absolute;
+            color: white;
+            left: 46%;
+            top: 48%;
+        }
+
+        .nav button {
+            position: absolute;
+            left: 48%;
+            top: 57%;
+
+
+            align-items: center;
+            background-color: #F87DA6;
+            border: 0;
+            border-radius: 100px;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 20px;
+            max-width: 480px;
+            min-height: 40px;
+            min-width: 0px;
+            overflow: hidden;
+            padding: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            touch-action: manipulation;
+            transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+        }
+
+        .button-18:hover,
+        .button-18:focus {
+            background-color: #16437E;
+            color: #ffffff;
+        }
+
+        .button-18:active {
+            background: #09223b;
+            color: rgb(255, 255, 255, .7);
+        }
+
+        .button-18:disabled {
+            cursor: not-allowed;
+            background: rgba(0, 0, 0, .08);
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .container .half {
+            position: relative;
+            margin-top: -250px;
+
+        }
+
+        .container .featured {
+            position: relative;
+
+            width: 100%;
+            height: 80px;
+
+        }
+
+        .container .featured .join {
+            position: absolute;
+            top: 0%;
+            left: 45%;
+            font-size: 80%;
+
+        }
+
+        .container .featured .online {
+            position: absolute;
+            top: 25%;
+            left: 42%;
+            font-size: 150%;
+            font-family: myfirstfont;
+            word-spacing: 5px;
+
+        }
+        @media screen and (max-width:580px){
+            .flex1{
+                flex-direction: column;
+            }
+        }
+
+        .flex1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+
+        }
+
+        .flex1 .open {
+            position: relative;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 312px;
+            top: 20px;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+
+        .write {
+            position: relative;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 312px;
+            top: 20px;
+            margin: 20px;
+        }
+
+        .learn {
+            position: relative;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 312px;
+            top: 20px;
+            margin: 20px;
+        }
+
+        .imga {
+            background-image: url(download.jpg);
+            height: 160px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .write .imga2 {
+            background-image: url(edugraph-37.jpg);
+            background-size: cover;
+            height: 160px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .imga3 {
+            background-image: url(pexels-photo-11049021.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 160px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .button2 {
+
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            z-index: 1;
+        }
+
+        button {
+            align-items: center;
+            appearance: none;
+            background-color: #8088DA;
+            background-image: linear-gradient(1deg, #4F58FD, #8088DA 99%);
+            background-size: calc(100% + 20px) calc(100% + 20px);
+            border-radius: 100px;
+            border-width: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: CircularStd, sans-serif;
+            font-size: 1rem;
+            height: auto;
+            justify-content: center;
+            line-height: 1.5;
+            padding: 6px 20px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color .2s, background-position .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+
+        .button-21:active,
+        .button-21:focus {
+            outline: none;
+        }
+
+        .button-21:hover {
+            background-position: -20px -20px;
+        }
+
+        .button-21:focus:not(:active) {
+            box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+        }
+
+        .zero {
+            position: absolute;
+            color: #F87DA6;
+            top: 54%;
+            left: 8%;
+            text-decoration: none;
+
+        }
+
+        .stars {
+            position: absolute;
+            top: 54%;
+            left: 65%;
+        }
+
+        .clean {
+            position: absolute;
+            top: 58%;
+            font-size: 90%;
+            left: 5%;
+        }
+
+        .clock {
+            position: absolute;
+            top: 76%;
+            left: 5%;
+            font-size: 70%;
+
+        }
+
+        .user2 {
+            position: absolute;
+            top: 76%;
+            left: 30%;
+            font-size: 70%;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+            height: 7%;
+            width: 10%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            background-image: url(Real-Men-Open-Up-About-The-Pressures-Of-Being-A-Man-And-What-It-Means-Today-1200x900_6193a337d81af.jpeg);
+        }
+
+        .kimani {
+
+            position: absolute;
+            left: 25%;
+            top: 87%;
+            font-size: 80%;
+        }
+
+        .footer1 {
+            position: relative;
+            text-align: center;
+            height: 70px;
+            width: 100%;
+            top: 30px;
+
+        }
+
+
+        .footer .view {
+            text-decoration: none;
+            color: #a71202;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+            <div class="nav">
+
+
+                <div class="gem"><i class="fa-regular fa-gem fa-2xl" style="color: #a71202;"></i></div>
+                <div class="study"><b>Study Course</b></div>
+                <div class="journey">Journey to success</div>
+                <a href="#" class="home">Home</a>
+                <a href="#" class="about">About</a>
+                <a href="#" class="courses">Courses</a>
+                <a href="#" class="pages">Pages</a>
+                <a href="#" class="contact">Contact</a>
+
+
+                <div class="glass"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </div>
+                <div class="user"><i class="fa-solid fa-user fa-sm" style="color: #ffffff;"></i></div>
+
+                <a href="#" class="login">Login</a>
+
+                <div class=moon><i class="fa-regular fa-moon fa-rotate-270 fa-sm" style="color: #ffffff;"></i></div>
+
+
+
+                <div class="disc">50% Discount on all Popular
+                    <br>Courses
+                </div>
+
+                <div class="take"> Take the first step to success with us</div>
+
+                <div class="button">
+                    <button>Ready to get started?</button>
+
+
+
+                </div>
+
+                <div class="break">
+
+
+                    </svg>
+                </div>
+
+
+            </div>
+            <hr style="margin-top: -540px;">
+
+
+
+
+        </div>
+        <div class="half">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FFFFFF" fill-opacity="1"
+                    d="M0,64L34.3,80C68.6,96,137,128,206,154.7C274.3,181,343,203,411,208C480,213,549,203,617,186.7C685.7,171,754,149,823,144C891.4,139,960,149,1029,160C1097.1,171,1166,181,1234,192C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                </path>
+            </svg>
+
+
+        </div>
+        <div class="featured">
+            <div class="join">JOIN OUR LEARN COURSES</div>
+            <div class="online"><b>Featured Online Courses</b></div>
+        </div>
+
+
+
+    </div>
+    <div class="flex1">
+        <div class="open">
+            <div class="imga">
+
+                <div class="button2">
+                    <button>Beginner</button>
+                </div>
+            </div>
+
+            <a href="#" class="zero">$0.00</a>
+            <div class="stars">
+
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-regular fa-star fa-2xs"></i>
+
+            </div>
+            <div class="clean">
+                <p><b>Learning to Write as a clean and
+                        <br>
+                        Professional Author</b>
+                </p>
+
+            </div>
+
+            <div class="clock">
+                <i class="fa-regular fa-clock fa-2xs" style="color: #c1c1c1;"> 20hrs</i>
+            </div>
+
+            <div class="user2">
+                <i class="fa-regular fa-user fa-2xs" style="color: #c1c1c1;"> 50</i>
+
+            </div>
+            <hr style="margin-top: 270px" width="100%">
+
+
+
+            <div class="img2"> </div>
+            <div class="kimani">
+                <p>
+                    by <b>Fred</b> in <b>Programming</b>
+                </p>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="write">
+            <div class="imga2">
+
+                <div class="button2">
+                    <button>Beginner</button>
+                </div>
+            </div>
+
+            <a href="#" class="zero">$9.66</a>
+            <div class="stars">
+
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-regular fa-star fa-2xs"></i>
+
+            </div>
+            <div class="clean">
+                <p><b>Open programming Courses for
+                        <br>
+                        Everyone : Python</b>
+                </p>
+
+            </div>
+
+            <div class="clock">
+                <i class="fa-regular fa-clock fa-2xs" style="color: #c1c1c1;"> 20hrs</i>
+            </div>
+
+            <div class="user2">
+                <i class="fa-regular fa-user fa-2xs" style="color: #c1c1c1;"> 50</i>
+
+            </div>
+            <hr style="margin-top: 270px" width="100%">
+
+
+
+            <div class="img2"> </div>
+            <div class="kimani">
+                <p>
+                    by <b>Kimani</b> in <b>Programming</b>
+                </p>
+
+            </div>
+        </div>
+        <div class="learn">
+            <div class="imga3">
+
+                <div class="button2">
+                    <button>Beginner</button>
+                </div>
+            </div>
+
+            <a href="#" class="zero">$0.00</a>
+            <div class="stars">
+
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-regular fa-star fa-2xs"></i>
+
+            </div>
+            <div class="clean">
+                <p><b>Learning to smoke as a clean and
+                        <br>
+                        Professional smoker</b>
+                </p>
+
+            </div>
+
+            <div class="clock">
+                <i class="fa-regular fa-clock fa-2xs" style="color: #c1c1c1;"> 20hrs</i>
+            </div>
+
+            <div class="user2">
+                <i class="fa-regular fa-user fa-2xs" style="color: #c1c1c1;"> 50</i>
+
+            </div>
+            <hr style="margin-top: 270px" width="100%">
+
+
+
+            <div class="img2"> </div>
+            <div class="kimani">
+                <p>
+                    by <b>Kimani</b> in <b>Teaching</b>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="footer">
+
+            <p>Control your personal preference settings to get notified about
+                <br>
+                appropriate courses <a href="#" class="view">View All Courses</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
