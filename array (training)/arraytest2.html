@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Question1
+        let arr1 = ['Nike', 'Fila', 'Jordan', 'Kumma', 'Zara']
+        let aar2 = ['Daisy', 'June', 'Tracy', 'Irene']
+
+
+        combinedarray = arr1.concat(aar2)
+        console.log(combinedarray)
+
+        //remove first array
+
+        combinedarray.shift()
+        console.log(combinedarray)
+
+
+        //Question2
+
+        let sourceArray = ['shirt', 'shoes', 'shorts', 'coat', 'spoon', 'plate', 'mug']
+
+        subArray = sourceArray.slice(2,5)
+        console.log(subArray)
+
+        //when replacing elements using splice, .splice take a value +1 of where you want to end your replacment;
+
+        subArray.splice(0,3, 'x', 'y', 'z');
+        console.log(subArray);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
